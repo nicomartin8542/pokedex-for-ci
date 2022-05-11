@@ -7,7 +7,7 @@ on:
 
 jobs:
   hello_word:
-    run-on: ubuntu-18.04
+    runs-on: ubuntu-18.04
     steps:
       - name: Echo the menssage
         run: |
