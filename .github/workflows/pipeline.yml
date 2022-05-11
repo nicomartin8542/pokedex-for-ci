@@ -23,3 +23,9 @@ jobs:
         run: npm run build
       - name: Test
         run: npm test
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folde: dist
+          token: ${{secrets.TOKEN_PERSONAL}}
