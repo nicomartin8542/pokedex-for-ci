@@ -1,0 +1,17 @@
+name: Deploy pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Descargar proyecto a VD
+        uses: actions/checkout@v3
+        with:
+          ref: main
+      - name: Listar repositorio
+        run: ls -la
