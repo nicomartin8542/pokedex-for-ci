@@ -9,13 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - name: Descargar proyecto a VD
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           ref: main
-      - name: Install node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14
-      - name: Listar repositorio
-        run: ls -la
+      - name: Instalar las dependencias
+        run: npm install
+      - name: Lint
+        run: npm run eslint
