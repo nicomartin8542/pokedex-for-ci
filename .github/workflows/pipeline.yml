@@ -27,5 +27,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folde: dist
+          folder: dist
           token: ${{secrets.TOKEN_PERSONAL}}
