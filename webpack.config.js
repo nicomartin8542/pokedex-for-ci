@@ -5,8 +5,8 @@ module.exports = {
   entry: "./src/index.jsx",
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: 'https://nicomartin8542.github.io/'
+    filename: 'https://nicomartin8542.github.io/bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
